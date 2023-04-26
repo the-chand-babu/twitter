@@ -1,7 +1,12 @@
 import React from "react";
+import SignupUpPopup from "./SignupUpPopup";
 
 function SignUp() {
-  return <div>this is signup... hh.</div>;
+  return <div>
+
+<SignupUpPopup />
+
+  </div>;
 }
 
 export default SignUp;
