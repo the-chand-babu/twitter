@@ -1,0 +1,42 @@
+
+
+.tweetContainer{
+    border: 1px solid red;
+    width: 90%;
+    margin-left: 4rem;
+}
+.tweetContainer>img{
+    width: 80%;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+.profileDiv{
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+   
+}
+.profileDiv img{
+    width: 3.5rem;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.iconDiv{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    
+}
+.icons span{
+    font-size: 0.9rem;
+    margin-left: 0.3rem;
+}

@@ -4,7 +4,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 
 
-const userSlice= createSlice({
+const  userSlice= createSlice({
     name:"User",
     initialState:JSON.parse(localStorage.getItem("userdata"))||[],
     reducers:{
@@ -16,4 +16,18 @@ const userSlice= createSlice({
     }
 })
 
-export default userSlice;
+
+const  TweetSlice=createSlice({
+    name:"Tweets",
+    initialState:[],
+    reducers:{
+        AddAllTweet:(state,action)=>{
+          
+            state.push(...action.payload);
+        }
+    }
+})
+
+
+export {userSlice,TweetSlice}
+ 
