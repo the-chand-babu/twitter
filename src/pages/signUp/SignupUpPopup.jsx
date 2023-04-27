@@ -22,12 +22,18 @@ function SignupUpPopup() {
   const [phoneError, setphoneErorr] = useState("");
   const dispatch = useDispatch();
 
-
-
   const handleChangeName = (event) => {
     const { value } = event.target;
     setName(value);
   };
+
+  console.log(
+    email.length == 0 ||
+      phone ||
+      emailError ||
+      passwordError ||
+      (phoneError && true)
+  );
 
   const handleChangePassword = (event) => {
     const { value } = event.target;
@@ -205,18 +211,7 @@ function SignupUpPopup() {
       </p>
 
       <Button
-        disabled={
-          email.length == 0 &&
-          password.length < 6 &&
-          phone.length < 10 &&
-          !emailError &&
-          emailError.length == 0 &&
-          !passwordError &&
-          passwordError.length == 0 &&
-          !phoneError &&
-          phoneError.length == 0 &&
-          true
-        }
+        disabled={email.length == 0 || !phone || !password || !date}
         onClick={handleSubmit}
         variant="contained"
         sx={{ width: "82%", marginTop: "2rem", marginBottom: "1rem" }}

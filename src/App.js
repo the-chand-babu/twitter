@@ -7,6 +7,8 @@ import SignUp from "./pages/signUp/SignUp.jsx";
 import Home from "./pages/homePage/Home.jsx";
 import { Provider } from "react-redux";
 import store from "./component/storeComponent/store";
+import SignupUpPopup from "./pages/signUp/SignupUpPopup";
+
 function App() {
   return (
     <div className="App">
