@@ -2,8 +2,8 @@ import React from "react";
 import { useState } from "react";
 import style from "./TrendingBar.module.css";
 import SentimentVeryDissatisfiedIcon from "@mui/icons-material/SentimentVeryDissatisfied";
-import Dialog2 from "./Dialog";
-import CustomButton from "./Buttons";
+import Dialog2 from "../../dialogForRightBar/Dialog2";
+import CustomButton from "../../../Atoms/buttons/Buttons";
 
 const Trends = () => {
   const [isNotIntrested, setIsNotIntrested] = useState([

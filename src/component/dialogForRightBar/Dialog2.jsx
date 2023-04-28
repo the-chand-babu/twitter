@@ -1,6 +1,6 @@
 import { Button, Popover } from "antd";
 import { useState } from "react";
-import style from "./Dialog.module.css";
+import style from "./Dialog2.module.css";
 
 const Dialog2 = (props) => {
   const [open, setOpen] = useState(false);
@@ -24,7 +24,7 @@ const Dialog2 = (props) => {
           color: "#fff",
           background: "black",
           border: "1px solid #fff",
-          // boxShadow: "0 0 10px #fff",
+          boxShadow: "0 0 10px #fff",
         }}
         onOpenChange={handleOpenChange}
       >

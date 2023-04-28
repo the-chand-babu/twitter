@@ -1,8 +1,7 @@
 import style from "./home.module.css";
 import React from "react";
-import Search from "../../component/rightSideBar/searchbar/SearchBar";
-import TrendingBar from "../../component/rightSideBar/whatsHappeningBar/TrendingBar";
-import Righthomebox2 from "../../component/rightSideBar/whoToFollowBar/WhoToFollow";
+import RightSideBar from "../../component/rightSideBar/RightSideBar";
+
 
 
 const Home = () => {
@@ -12,9 +11,7 @@ const Home = () => {
 
       <div className={style.TweetContainer}>main tweets component involks</div>
       <div>
-        <Search />     
-        <TrendingBar/> 
-        <Righthomebox2 />
+      <RightSideBar/>
       </div>
     </div>
   );

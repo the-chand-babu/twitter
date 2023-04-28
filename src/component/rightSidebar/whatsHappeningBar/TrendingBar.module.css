@@ -1,12 +1,11 @@
 .keywords {
   right: 0;
-  width:90%;
+  width: 100%;
   color: black;
   margin-top: 2.4rem;
-
 }
 .key {
-  background: #F7F9F9;
+  background: #f7f9f9;
   padding: 0.45rem;
   border-radius: 5px;
   border-radius: 15px;
@@ -16,7 +15,6 @@
   padding-bottom: 0.8rem;
   padding-left: 0.8rem;
   font-family: inherit;
-  
 }
 .country {
   font-size: 0.875rem;
@@ -30,33 +28,32 @@
   font-size: 0.75rem;
   font-weight: 300;
 }
-.heading4{
-  color:black
+.heading4 {
+  color: black;
 }
-.container{
+.container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 0.50rem;
+  padding: 0.5rem 0.5rem;
 }
-.container:hover{
-  background-color: #EFF1F1;
+.container:hover {
+  background-color: #eff1f1;
 }
 
-.btn1{
+.btn1 {
   color: white;
   background-color: transparent;
   border: none;
   outline: none;
   font-size: 1.2rem;
   margin-right: 0.5rem;
-  
 }
 
-.btn2{
+.btn2 {
   background: none;
   color: rgb(29, 155, 240);
-    font: 2px;
+  font: 2px;
   border: none;
- outline: none;
+  outline: none;
 }
