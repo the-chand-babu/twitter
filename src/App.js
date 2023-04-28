@@ -11,7 +11,7 @@ import SignupUpPopup from "./pages/signUp/SignupUpPopup";
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <Provider store={store}>
         <Routes>
           <Route path="/" element={<Home />} />

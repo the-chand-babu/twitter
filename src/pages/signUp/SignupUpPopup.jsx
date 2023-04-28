@@ -4,7 +4,7 @@ import { TextField, Button } from "@mui/material";
 import { Snackbar } from "@mui/material";
 import Joi from "@hapi/joi";
 import { useSelector, useDispatch } from "react-redux";
-import userSlice from "../../component/storeComponent/reducer";
+import {userSlice} from "../../component/storeComponent/reducer";
 
 let id;
 let idPassword;
