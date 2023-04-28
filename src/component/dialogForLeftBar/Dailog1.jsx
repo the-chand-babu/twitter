@@ -1,10 +1,10 @@
 
-import style from "./Dialog.module.css";
+import style from "./Dialog1.module.css";
 import React from "react";
 import Fab from '@mui/material/Fab';
 import AddIcon from '@mui/icons-material/Add';
 import { useState } from "react";
-import Tweet from "../../Atom/Tweet/Tweet";
+import Tweet from "../../Atoms/tweet/Tweet";
 import Dialog from "@mui/material/Dialog";
 function DialogBox(props) {
   

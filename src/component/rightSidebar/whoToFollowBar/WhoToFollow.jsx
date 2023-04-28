@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Avatar } from "@mui/material";
 import style from "./WhoToFollow.module.css";
-import CustomButton from "../../../Atoms/buttons/Buttons";
+import CustomButton from "../whatsHappeningBar/Buttons";
 import VerifiedIcon from '@mui/icons-material/Verified';
 
 function Righthomebox2() {
