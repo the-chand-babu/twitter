@@ -8,14 +8,13 @@ import Righthomebox2 from "../../component/rightSideBar/whoToFollowBar/WhoToFoll
 const Home = () => {
   return (
     <div className={style.homeContainer}>
-      <div className={style.sidebar}>sidebar... invoks</div>
+      <div className={style.leftsidebar}>sidebar... invoks</div>
 
-      <div className={style.mainContainer}>main tweets component involks</div>
+      <div className={style.TweetContainer}>main tweets component involks</div>
       <div>
         <Search />     
         <TrendingBar/> 
         <Righthomebox2 />
-
       </div>
     </div>
   );

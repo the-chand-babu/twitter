@@ -1,23 +1,41 @@
-import React from "react";
-import { FaSistrix } from "react-icons/fa";
-import style from "./SearchBar.moduel.css";
+import React, { useState } from "react";
+import { FaSearch } from "react-icons/fa";
+import styles from "./SearchBar.module.css";
 
-const Search = () => {
+const SearchBar = () => {
+  const [query, setQuery] = useState("");
+  const [placeholder, setPlaceholder] = useState("Search Twitter");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Perform search action with the query here
+    console.log(query);
+  };
+
+  const handleInputFocus = () => {
+    setPlaceholder("Try searching for people, topics, or keywords");
+  };
+
+  const handleInputBlur = () => {
+    setPlaceholder("Search Twitter");
+  };
+
   return (
-    <div className={style.trends}>
-      <div className={style.trends__search}>
-        <input
-          type="text"
-          className={style.trend__control}
-          placeholder="Search Twitter"
-          onChange={(e) => e.target.value}
-        />
-        <div className={style.trend__icon}>
-          <FaSistrix className={style.search} />
-        </div>
-      </div>
-    </div>
+    <form className={styles.searchBar} onSubmit={handleSubmit}>
+      <input
+        type="text"
+        className={styles.searchInput}
+        placeholder={placeholder}
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        onFocus={handleInputFocus}
+        onBlur={handleInputBlur}
+      />
+      <button type="submit" className={styles.searchButton}>
+        <FaSearch />
+      </button>
+    </form>
   );
 };
 
-export default Search;
+export default SearchBar;

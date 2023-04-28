@@ -105,7 +105,7 @@ const Trends = () => {
                   content={
                     <p>
                       <SentimentVeryDissatisfiedIcon />
-                      Is not Intrested
+                      IsnotIntrested
                     </p>
                   }
                 />

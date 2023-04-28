@@ -1,22 +1,17 @@
-
-.homeContainer{
-    border: 1px solid red;
-    width: 100%;
-    height: 30rem;
-    display: flex;
+.homeContainer {
+  border: 1px solid red;
+  width: 100%;
+  height: 30rem;
+  display: flex;
 }
 
-
-
-.sidebar{
-    width: 25%;
-    border: 1px solid red;
-    height: 100%;
+.leftsidebar {
+  width: 25%;
+  border: 1px solid red;
+  height: 100%;
 }
 
-.mainContainer{
-    width: 50%;
-    border: 1px solid red;
-    
-
+.TweetContainer {
+  width: 50%;
+  border: 1px solid red;
 }
